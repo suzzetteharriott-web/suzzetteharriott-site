@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | Dr. Suzzette Harriott</title>
-<meta name="description" content="Contact Dr. Suzzette A. Harriott about Therapeutic Conflictology or RESET. Replies within one to two business days.">
+<meta name="description" content="Contact Dr. Suzzette A. Harriott by email at contact@suzzetteharriott.com about Therapeutic Conflictology, Mindful Eating & Body Image or RESET.">
 <link rel="canonical" href="https://suzzetteharriott.com/contact/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Contact | Dr. Suzzette Harriott">
-<meta property="og:description" content="Contact Dr. Suzzette A. Harriott about Therapeutic Conflictology or RESET. Replies within one to two business days.">
+<meta property="og:description" content="Contact Dr. Suzzette A. Harriott by email at contact@suzzetteharriott.com about Therapeutic Conflictology, Mindful Eating & Body Image or RESET.">
 <meta property="og:url" content="https://suzzetteharriott.com/contact/">
 <meta property="og:image" content="https://suzzetteharriott.com/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css?v=3">
+<link rel="stylesheet" href="../assets/site.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -39,69 +39,29 @@
   <div class="wrap narrow">
     <p class="eyebrow">Contact</p>
     <h1>Start the conversation.</h1>
-    <p class="lead">Tell me a little about what brought you here. I reply within one to two business days.</p>
+    <p class="lead">Send a short email about what brought you here. I reply within one to two business days.</p>
+    <p class="email-big"><a href="mailto:contact@suzzetteharriott.com">contact@suzzetteharriott.com</a></p>
+    <div class="btn-row"><a class="btn" href="mailto:contact@suzzetteharriott.com?subject=Enquiry">Email Dr. Harriott</a></div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <div class="split" style="align-items:start">
+      <ul class="contact-list">
+        <li><strong>Email</strong><a href="mailto:contact@suzzetteharriott.com">contact@suzzetteharriott.com</a></li>
+        <li><strong>Location</strong>Kingston, Jamaica, and secure video worldwide</li>
+        <li><strong>Availability</strong>By appointment only</li>
+      </ul>
       <div>
-        <ul class="contact-list">
-          <li><strong>Email</strong><a href="mailto:contact@suzzetteharriott.com">contact@suzzetteharriott.com</a></li>
-          <li><strong>Location</strong>Kingston, Jamaica, and secure video worldwide</li>
-          <li><strong>Availability</strong>By appointment only</li>
-        </ul>
-        <p class="note">Please keep your first message brief and leave out sensitive personal or health details. We can talk about those privately once we connect.</p>
+        <h3>What to include</h3>
+        <ul class="ticks"><li>Your name and the best way to reach you</li><li>Which service you are asking about: Therapeutic Conflictology, Mindful Eating &amp; Body Image, couples or family sessions, or RESET</li><li>A sentence or two about what you are hoping for</li></ul>
+        <p class="note" style="margin-top:1.5rem">Please keep your first email brief and leave out sensitive personal or health details. We can talk about those privately once we connect.</p>
         <p class="note">This is not a crisis service. If you are in danger or need urgent care, please contact your local emergency services or go to the nearest hospital.</p>
       </div>
-      <form class="form" id="contact-form" novalidate>
-        <div>
-          <label for="name">Your name</label>
-          <input id="name" name="name" autocomplete="name" required>
-        </div>
-        <div>
-          <label for="reply">Best email or phone to reach you</label>
-          <input id="reply" name="reply" autocomplete="email" required>
-        </div>
-        <div>
-          <label for="topic">What is this about?</label>
-          <select id="topic" name="topic">
-            <option value="Therapeutic Conflictology">Therapeutic Conflictology (one-to-one)</option>
-            <option value="Mindful Eating &amp; Body Image">Mindful Eating &amp; Body Image</option>
-            <option value="Couples or family sessions">Couples or family sessions</option>
-            <option value="RESET">RESET immersion</option>
-            <option value="Professional referral">Professional referral</option>
-            <option value="Something else">Something else</option>
-          </select>
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </div>
-        <div>
-          <button class="btn" type="submit">Open in my email</button>
-          <p class="hint">This opens a new email to contact@suzzetteharriott.com with your message filled in, so you can review it and press send. Nothing is stored on this website.</p>
-        </div>
-      </form>
     </div>
   </div>
 </section>
-<script>
-  (function () {
-    var f = document.getElementById('contact-form');
-    var params = new URLSearchParams(location.search);
-    var pick = { reset: 'RESET', 'therapeutic-conflictology': 'Therapeutic Conflictology', 'mindful-eating': 'Mindful Eating & Body Image' }[params.get('topic')];
-    if (pick) f.topic.value = pick;
-    f.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (!f.reportValidity()) return;
-      var subject = 'Enquiry: ' + f.topic.value;
-      var body = f.message.value + '\n\n' + f.name.value + '\n' + f.reply.value;
-      location.href = 'mailto:contact@suzzetteharriott.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    });
-  })();
-</script>
 
 </main>
 <footer class="site-footer">

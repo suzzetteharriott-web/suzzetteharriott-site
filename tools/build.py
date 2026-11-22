@@ -105,7 +105,7 @@ def page(path, title, description, current, body, extra_head=''):
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=3">
+<link rel="stylesheet" href="/assets/site.css?v=4">
 {extra_head}</head>
 <body>
 {header(current)}
@@ -302,7 +302,7 @@ page('/counselling/', 'Therapeutic Conflictology', 'Therapeutic Conflictology wi
     <p class="eyebrow">In person in Kingston &middot; Secure video worldwide</p>
     <h1>Therapeutic Conflictology</h1>
     <p class="lead">Conflict-informed support for individuals, couples, families and professionals navigating emotional stress, family tension, career decisions and major life transitions.</p>
-    <div class="btn-row"><a class="btn btn-light" href="/contact/?topic=therapeutic-conflictology">Start the conversation</a></div>
+    <div class="btn-row"><a class="btn btn-light" href="mailto:{EMAIL}?subject=Therapeutic%20Conflictology%20enquiry">Start the conversation</a></div>
   </div>
 </section>
 
@@ -350,7 +350,7 @@ page('/counselling/', 'Therapeutic Conflictology', 'Therapeutic Conflictology wi
         <p class="note" style="margin-top:1.5rem">Where physical health needs attention, this work sits alongside care from your doctor and, where helpful, a registered dietitian. If you are unwell or need urgent medical care, please contact your doctor or local emergency services first.</p>
       </div>
     </div>
-    <div class="btn-row"><a class="btn" href="/contact/?topic=mindful-eating">Ask about Mindful Eating &amp; Body Image</a></div>
+    <div class="btn-row"><a class="btn" href="mailto:{EMAIL}?subject=Mindful%20Eating%20%26%20Body%20Image">Ask about Mindful Eating &amp; Body Image</a></div>
   </div>
 </section>
 
@@ -417,7 +417,7 @@ page('/reset/', 'RESET', 'RESET: a cohort-based experiential immersion in emotio
     <h1>RESET</h1>
     <p class="lead">A cohort-based immersion that builds emotional intelligence, strengthens relationships and helps you align daily life with what matters most, through lived experience rather than lectures.</p>
     <p class="lead" style="font-family:var(--heading);font-style:italic;font-size:1.6rem">Step out of autopilot. Step into intention.</p>
-    <div class="btn-row"><a class="btn btn-light" href="/contact/?topic=reset">Enquire about RESET</a></div>
+    <div class="btn-row"><a class="btn btn-light" href="mailto:{EMAIL}?subject=RESET%20enquiry">Enquire about RESET</a></div>
   </div>
 </section>
 
@@ -544,80 +544,40 @@ page('/reset/', 'RESET', 'RESET: a cohort-based experiential immersion in emotio
   <div class="wrap narrow">
     <h2>Curious if RESET is your next step?</h2>
     <p class="lead">A brief conversation helps us understand your goals and whether the upcoming cohort is the right match.</p>
-    <div class="btn-row" style="justify-content:center"><a class="btn btn-light" href="/contact/?topic=reset">Enquire about RESET</a></div>
+    <div class="btn-row" style="justify-content:center"><a class="btn btn-light" href="mailto:{EMAIL}?subject=RESET%20enquiry">Enquire about RESET</a></div>
   </div>
 </section>
 ''')
 
 # ---------------------------------------------------------------- Contact
-page('/contact/', 'Contact', 'Contact Dr. Suzzette A. Harriott about Therapeutic Conflictology or RESET. Replies within one to two business days.', '/contact/', f'''
+page('/contact/', 'Contact', 'Contact Dr. Suzzette A. Harriott by email at contact@suzzetteharriott.com about Therapeutic Conflictology, Mindful Eating & Body Image or RESET.', '/contact/', f'''
 <section class="section bg-sand">
   <div class="wrap narrow">
     <p class="eyebrow">Contact</p>
     <h1>Start the conversation.</h1>
-    <p class="lead">Tell me a little about what brought you here. I reply within one to two business days.</p>
+    <p class="lead">Send a short email about what brought you here. I reply within one to two business days.</p>
+    <p class="email-big"><a href="mailto:{EMAIL}">{EMAIL}</a></p>
+    <div class="btn-row"><a class="btn" href="mailto:{EMAIL}?subject=Enquiry">Email Dr. Harriott</a></div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
     <div class="split" style="align-items:start">
+      <ul class="contact-list">
+        <li><strong>Email</strong><a href="mailto:{EMAIL}">{EMAIL}</a></li>
+        <li><strong>Location</strong>Kingston, Jamaica, and secure video worldwide</li>
+        <li><strong>Availability</strong>By appointment only</li>
+      </ul>
       <div>
-        <ul class="contact-list">
-          <li><strong>Email</strong><a href="mailto:{EMAIL}">{EMAIL}</a></li>
-          <li><strong>Location</strong>Kingston, Jamaica, and secure video worldwide</li>
-          <li><strong>Availability</strong>By appointment only</li>
-        </ul>
-        <p class="note">Please keep your first message brief and leave out sensitive personal or health details. We can talk about those privately once we connect.</p>
+        <h3>What to include</h3>
+        {ticks(['Your name and the best way to reach you', 'Which service you are asking about: Therapeutic Conflictology, Mindful Eating &amp; Body Image, couples or family sessions, or RESET', 'A sentence or two about what you are hoping for'])}
+        <p class="note" style="margin-top:1.5rem">Please keep your first email brief and leave out sensitive personal or health details. We can talk about those privately once we connect.</p>
         <p class="note">This is not a crisis service. If you are in danger or need urgent care, please contact your local emergency services or go to the nearest hospital.</p>
       </div>
-      <form class="form" id="contact-form" novalidate>
-        <div>
-          <label for="name">Your name</label>
-          <input id="name" name="name" autocomplete="name" required>
-        </div>
-        <div>
-          <label for="reply">Best email or phone to reach you</label>
-          <input id="reply" name="reply" autocomplete="email" required>
-        </div>
-        <div>
-          <label for="topic">What is this about?</label>
-          <select id="topic" name="topic">
-            <option value="Therapeutic Conflictology">Therapeutic Conflictology (one-to-one)</option>
-            <option value="Mindful Eating &amp; Body Image">Mindful Eating &amp; Body Image</option>
-            <option value="Couples or family sessions">Couples or family sessions</option>
-            <option value="RESET">RESET immersion</option>
-            <option value="Professional referral">Professional referral</option>
-            <option value="Something else">Something else</option>
-          </select>
-        </div>
-        <div>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </div>
-        <div>
-          <button class="btn" type="submit">Open in my email</button>
-          <p class="hint">This opens a new email to {EMAIL} with your message filled in, so you can review it and press send. Nothing is stored on this website.</p>
-        </div>
-      </form>
     </div>
   </div>
 </section>
-<script>
-  (function () {{
-    var f = document.getElementById('contact-form');
-    var params = new URLSearchParams(location.search);
-    var pick = {{ reset: 'RESET', 'therapeutic-conflictology': 'Therapeutic Conflictology', 'mindful-eating': 'Mindful Eating & Body Image' }}[params.get('topic')];
-    if (pick) f.topic.value = pick;
-    f.addEventListener('submit', function (e) {{
-      e.preventDefault();
-      if (!f.reportValidity()) return;
-      var subject = 'Enquiry: ' + f.topic.value;
-      var body = f.message.value + '\\n\\n' + f.name.value + '\\n' + f.reply.value;
-      location.href = 'mailto:{EMAIL}?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-    }});
-  }})();
-</script>
 ''')
 
 # ---------------------------------------------------------------- Legal
@@ -638,7 +598,7 @@ def legal(path, title, desc, body):
 legal('/privacy-policy/', 'Privacy Policy', 'How suzzetteharriott.com handles personal information.', f'''
 <p>This website, suzzetteharriott.com, is operated by Dr. Suzzette A. Harriott, PhD, practising as Suzzette Harriott &amp; Associates (&ldquo;Dr. Harriott&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). Dr. Harriott respects your privacy. This policy explains what information this website handles and how. Personal data is handled in line with Jamaica&rsquo;s Data Protection Act, 2020.</p>
 <h2>What this website collects</h2>
-<p>This website does not have accounts, logins or a database, and it does not store the information you type into the contact form. When you use the contact form, your device opens a new email addressed to us. Nothing is sent until you press send in your own email program.</p>
+<p>This website does not have accounts, logins, contact forms or a database. It does not collect personal information from visitors. To get in touch, you email Dr. Harriott directly.</p>
 <p>If you email Dr. Harriott, she receives the information you choose to include, such as your name, email address, phone number and message.</p>
 <h2>How we use your information</h2>
 <ul>
