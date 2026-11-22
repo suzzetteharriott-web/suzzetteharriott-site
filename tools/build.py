@@ -24,8 +24,9 @@ def header(current):
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/" aria-label="{NAME} home">
-      <span class="brand-name">Dr. Suzzette Harriott</span>
-      <span class="brand-sub">Therapeutic Conflictology</span>
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#2c4a5e" stroke-width="2.5"/><path d="M22 38 a10 10 0 0 1 20 0z" fill="#c9a36a"/><line x1="12" y1="38" x2="52" y2="38" stroke="#2c4a5e" stroke-width="2.5" stroke-linecap="round"/><line x1="24" y1="44" x2="40" y2="44" stroke="#c9a36a" stroke-width="2.5" stroke-linecap="round"/><line x1="28" y1="49.5" x2="36" y2="49.5" stroke="#c9a36a" stroke-width="2.5" stroke-linecap="round"/></svg>
+      <span class="brand-text"><span class="brand-name">Dr. Suzzette Harriott</span>
+      <span class="brand-sub">PhD &middot; Therapeutic Conflictology</span></span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav class="nav" id="site-nav" aria-label="Main">
@@ -41,6 +42,7 @@ FOOTER = f'''<footer class="site-footer">
     <div class="footer-grid">
       <div>
         <p class="footer-name">Dr. Suzzette A. Harriott, PhD</p>
+        <p class="footer-slogan">Where conflict becomes clarity.</p>
         <p>Therapeutic Conflictology and RESET. In person in Kingston, Jamaica, and by secure video worldwide.</p>
         <p><a href="mailto:{EMAIL}">{EMAIL}</a></p>
       </div>
@@ -85,7 +87,7 @@ FOOTER = f'''<footer class="site-footer">
 
 
 def page(path, title, description, current, body, extra_head=''):
-    full_title = f'{title} | Dr. Suzzette Harriott' if title else 'Dr. Suzzette Harriott, PhD | Therapeutic Conflictology'
+    full_title = f'{title} | Dr. Suzzette Harriott' if title else 'Dr. Suzzette Harriott, PhD | Where conflict becomes clarity'
     url = SITE + path
     html = f'''<!DOCTYPE html>
 <html lang="en">
@@ -99,13 +101,19 @@ def page(path, title, description, current, body, extra_head=''):
 <meta property="og:title" content="{full_title}">
 <meta property="og:description" content="{description}">
 <meta property="og:url" content="{url}">
-<meta property="og:image" content="{SITE}/img/og.jpg">
+<meta property="og:image" content="{SITE}/img/og.jpg?v=2">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Dr. Suzzette Harriott, PhD. Where conflict becomes clarity.">
+<meta property="og:site_name" content="Dr. Suzzette Harriott">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#1f2e3a">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/assets/site.css?v=5">
+<link rel="stylesheet" href="/assets/site.css?v=7">
 {extra_head}</head>
 <body>
 {header(current)}
@@ -143,13 +151,13 @@ CTA = '''<section class="section bg-navy center">
 </section>'''
 
 # ---------------------------------------------------------------- Home
-page('/', '', 'Therapeutic Conflictology with Dr. Suzzette A. Harriott, PhD. Conflict-informed support for individuals, couples and families, in person in Kingston, Jamaica, and by secure video worldwide.', '/', f'''
+page('/', '', 'Where conflict becomes clarity. Therapeutic Conflictology with Dr. Suzzette A. Harriott, PhD, in person in Kingston, Jamaica, and by secure video worldwide.', '/', f'''
 <section class="hero">
   <video class="hero-media" autoplay muted loop playsinline poster="/img/hero-poster.jpg" aria-hidden="true">
     <source src="/media/ocean.mp4" type="video/mp4">
   </video>
   <div class="wrap">
-    <p class="eyebrow">Dr. Suzzette A. Harriott, PhD</p>
+    <p class="eyebrow">Where conflict becomes clarity</p>
     <h1>Clarity for what<br>you are carrying.</h1>
     <p class="lead">Therapeutic Conflictology for people navigating conflict, transition and the quiet pressure of holding everything together. In person in Kingston, or by secure video wherever you are.</p>
     <div class="btn-row">

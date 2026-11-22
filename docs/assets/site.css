@@ -759,3 +759,49 @@ a:focus-visible {
     width: 100%;
     height: auto;
 }
+
+/* ---------- Logo ---------- */
+.brand {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.brand-mark {
+    width: 2.6rem;
+    height: 2.6rem;
+    flex: none;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.footer-slogan {
+    font-family: var(--heading);
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #e3c48e;
+}
+
+.brand-sub {
+    white-space: nowrap;
+}
+
+@media (max-width: 420px) {
+    .brand-mark {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .brand-name {
+        font-size: 1.25rem;
+    }
+
+    .brand-sub {
+        font-size: 0.56rem;
+        letter-spacing: 0.08em;
+    }
+}
