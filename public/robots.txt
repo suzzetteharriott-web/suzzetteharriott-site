@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://suzzetteharriott.com/sitemap.xml

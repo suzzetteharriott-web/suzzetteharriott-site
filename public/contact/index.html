@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Dr. Suzzette Harriott</title>
+<meta name="description" content="Contact Dr. Suzzette A. Harriott about Therapeutic Conflictology or RESET. Replies within one to two business days.">
+<link rel="canonical" href="https://suzzetteharriott.com/contact/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | Dr. Suzzette Harriott">
+<meta property="og:description" content="Contact Dr. Suzzette A. Harriott about Therapeutic Conflictology or RESET. Replies within one to two business days.">
+<meta property="og:url" content="https://suzzetteharriott.com/contact/">
+<meta property="og:image" content="https://suzzetteharriott.com/img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Dr. Suzzette A. Harriott home">
+      <span class="brand-name">Dr. Suzzette Harriott</span>
+      <span class="brand-sub">Therapeutic Conflictology</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <a href="/">Home</a><a href="/about/">About</a><a href="/counselling/">Therapeutic Conflictology</a><a href="/reset/">RESET</a>
+      <a class="btn" href="/contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="section bg-sand">
+  <div class="wrap narrow">
+    <p class="eyebrow">Contact</p>
+    <h1>Start the conversation.</h1>
+    <p class="lead">Tell me a little about what brought you here. I reply within one to two business days.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split" style="align-items:start">
+      <div>
+        <ul class="contact-list">
+          <li><strong>Email</strong><a href="mailto:contact@suzzetteharriott.com">contact@suzzetteharriott.com</a></li>
+          <li><strong>Location</strong>Kingston, Jamaica, and secure video worldwide</li>
+          <li><strong>Availability</strong>By appointment only</li>
+        </ul>
+        <p class="note">Please keep your first message brief and leave out sensitive personal or health details. We can talk about those privately once we connect.</p>
+        <p class="note">This is not a crisis service. If you are in danger or need urgent care, please contact your local emergency services or go to the nearest hospital.</p>
+      </div>
+      <form class="form" id="contact-form" novalidate>
+        <div>
+          <label for="name">Your name</label>
+          <input id="name" name="name" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="reply">Best email or phone to reach you</label>
+          <input id="reply" name="reply" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="topic">What is this about?</label>
+          <select id="topic" name="topic">
+            <option value="Therapeutic Conflictology">Therapeutic Conflictology (one-to-one)</option>
+            <option value="Couples or family sessions">Couples or family sessions</option>
+            <option value="RESET">RESET immersion</option>
+            <option value="Professional referral">Professional referral</option>
+            <option value="Something else">Something else</option>
+          </select>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <div>
+          <button class="btn" type="submit">Open in my email</button>
+          <p class="hint">This opens a new email to contact@suzzetteharriott.com with your message filled in, so you can review it and press send. Nothing is stored on this website.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<script>
+  (function () {
+    var f = document.getElementById('contact-form');
+    var params = new URLSearchParams(location.search);
+    var pick = { reset: 'RESET', 'therapeutic-conflictology': 'Therapeutic Conflictology' }[params.get('topic')];
+    if (pick) f.topic.value = pick;
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (!f.reportValidity()) return;
+      var subject = 'Enquiry: ' + f.topic.value;
+      var body = f.message.value + '\n\n' + f.name.value + '\n' + f.reply.value;
+      location.href = 'mailto:contact@suzzetteharriott.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  })();
+</script>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-name">Dr. Suzzette A. Harriott, PhD</p>
+        <p>Therapeutic Conflictology and RESET. In person in Kingston, Jamaica, and by secure video worldwide.</p>
+        <p><a href="mailto:contact@suzzetteharriott.com">contact@suzzetteharriott.com</a></p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="/about/">About</a></li>
+          <li><a href="/counselling/">Therapeutic Conflictology</a></li>
+          <li><a href="/reset/">RESET</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="/privacy-policy/">Privacy Policy</a></li>
+          <li><a href="/terms-of-service/">Terms of Service</a></li>
+          <li><a href="/cookie-policy/">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Suzzette Harriott &amp; Associates. All rights reserved.</span>
+      <span>Looking for Compass college readiness? Visit <a href="https://cescarib.com">cescarib.com</a></span>
+    </div>
+  </div>
+</footer>
+<script>
+  (function () {
+    var t = document.querySelector('.menu-toggle');
+    var n = document.getElementById('site-nav');
+    if (t && n) {
+      t.addEventListener('click', function () {
+        var open = n.classList.toggle('open');
+        t.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    var y = document.querySelector('[data-year]');
+    if (y) y.textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+# Old Wix addresses. Compass pages now live on cescarib.com.
+/therapeutic-conflictology   /counselling/   301
+/book                        /contact/   301
+/book/*                      /contact/   301
+/special-education           https://cescarib.com/compass-care   301
+/college-consulting          https://cescarib.com/college-consulting   301
+/college-consulting/*        https://cescarib.com/college-consulting/:splat   301
+/pre-college                 https://cescarib.com/college-consulting   301
+/pre-college/*               https://cescarib.com/college-consulting   301
+/programs                    https://cescarib.com/college-consulting/programs   301
+/outcomes                    https://cescarib.com/college-consulting/outcomes   301
+/compass                     https://cescarib.com/college-consulting/compass   301
+/compass/*                   https://cescarib.com/login   301
+/iseey-foundation            https://cescarib.com/college-consulting/foundation   301
+/client-portal               https://cescarib.com/login   301
+/get-started                 https://cescarib.com/login   301
+/join                        https://cescarib.com/login   301
+/dashboard                   https://cescarib.com/login   301
+/parent-dashboard            https://cescarib.com/login   301
+/careers                     https://cescarib.com/   301
+/careers/*                   https://cescarib.com/   301
+/school/*                    https://cescarib.com/login   301
+/admin/*                     https://cescarib.com/login   301
