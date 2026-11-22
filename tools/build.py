@@ -1,7 +1,8 @@
-"""Regenerate the HTML pages in ../public. Run: python3 tools/build.py"""
+"""Regenerate the HTML pages in ../docs. Run: python3 tools/build.py"""
+import re
 from pathlib import Path
 
-OUT = Path(__file__).resolve().parent.parent / 'public'
+OUT = Path(__file__).resolve().parent.parent / 'docs'
 SITE = 'https://suzzetteharriott.com'
 EMAIL = 'contact@suzzetteharriott.com'
 NAME = 'Dr. Suzzette A. Harriott'
@@ -118,6 +119,11 @@ def page(path, title, description, current, body, extra_head=''):
     target = OUT / path.strip('/') / 'index.html' if path != '/' else OUT / 'index.html'
     if path.endswith('.html'):
         target = OUT / path.strip('/')
+    # Relative links, so pages work both on the preview address and on the real domain.
+    depth = len(target.relative_to(OUT).parts) - 1
+    prefix = '../' * depth if depth else './'
+    if not path.endswith('404.html'):
+        html = re.sub(r'(href|src|poster)="/(?!/)', lambda m: f'{m.group(1)}="{prefix}', html)
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text(html)
 
@@ -655,6 +661,38 @@ legal('/cookie-policy/', 'Cookie Policy', 'Cookie use on suzzetteharriott.com.',
 
 # ---------------------------------------------------------------- 404
 page('/404.html', 'Page not found', 'Page not found.', '', '''
+<script>
+  // Old Wix addresses: send Compass and special-education visitors to cescarib.com.
+  (function () {
+    var p = location.pathname.toLowerCase();
+    var map = [
+      ['/special-education', 'https://cescarib.com/compass-care'],
+      ['/college-consulting/', 'https://cescarib.com' + location.pathname],
+      ['/college-consulting', 'https://cescarib.com/college-consulting'],
+      ['/pre-college', 'https://cescarib.com/college-consulting'],
+      ['/programs', 'https://cescarib.com/college-consulting/programs'],
+      ['/outcomes', 'https://cescarib.com/college-consulting/outcomes'],
+      ['/iseey-foundation', 'https://cescarib.com/college-consulting/foundation'],
+      ['/compass', 'https://cescarib.com/login'],
+      ['/client-portal', 'https://cescarib.com/login'],
+      ['/get-started', 'https://cescarib.com/login'],
+      ['/join', 'https://cescarib.com/login'],
+      ['/dashboard', 'https://cescarib.com/login'],
+      ['/parent-dashboard', 'https://cescarib.com/login'],
+      ['/school', 'https://cescarib.com/login'],
+      ['/admin', 'https://cescarib.com/login'],
+      ['/careers', 'https://cescarib.com/'],
+      ['/therapeutic-conflictology', '/counselling/'],
+      ['/book', '/contact/']
+    ];
+    for (var i = 0; i < map.length; i++) {
+      if (p === map[i][0] || p.indexOf(map[i][0] + '/') === 0 || (map[i][0].slice(-1) === '/' && p.indexOf(map[i][0]) === 0)) {
+        location.replace(map[i][1]);
+        return;
+      }
+    }
+  })();
+</script>
 <section class="section center">
   <div class="wrap narrow">
     <p class="eyebrow">404</p>

@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cookie Policy | Dr. Suzzette Harriott</title>
-<meta name="description" content="Cookie use on suzzetteharriott.com.">
-<link rel="canonical" href="https://suzzetteharriott.com/cookie-policy/">
+<title>Page not found | Dr. Suzzette Harriott</title>
+<meta name="description" content="Page not found.">
+<link rel="canonical" href="https://suzzetteharriott.com/404.html">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Cookie Policy | Dr. Suzzette Harriott">
-<meta property="og:description" content="Cookie use on suzzetteharriott.com.">
-<meta property="og:url" content="https://suzzetteharriott.com/cookie-policy/">
+<meta property="og:title" content="Page not found | Dr. Suzzette Harriott">
+<meta property="og:description" content="Page not found.">
+<meta property="og:url" content="https://suzzetteharriott.com/404.html">
 <meta property="og:image" content="https://suzzetteharriott.com/img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -35,21 +35,47 @@
 </header>
 <main id="main">
 
-<section class="section">
-  <div class="wrap narrow legal">
-    <h1>Cookie Policy</h1>
-    <p><em>Last updated: November 2026</em></p>
-    
-<p>Cookies are small files a website can store on your device.</p>
-<h2>Our use of cookies</h2>
-<p>This website does not set any cookies. We do not use analytics, advertising or tracking tools.</p>
-<h2>Third parties</h2>
-<p>Fonts are loaded from Google Fonts. Google states that it does not set cookies when serving fonts, but it does receive your IP address. You can block third-party content through your browser settings if you prefer.</p>
-<h2>Changes</h2>
-<p>If this changes, we will update this page before any cookies are introduced.</p>
-
-    <h2>Contact</h2>
-<p>Suzzette Harriott &amp; Associates<br>Kingston, Jamaica<br><a href="mailto:contact@suzzetteharriott.com">contact@suzzetteharriott.com</a></p>
+<script>
+  // Old Wix addresses: send Compass and special-education visitors to cescarib.com.
+  (function () {
+    var p = location.pathname.toLowerCase();
+    var map = [
+      ['/special-education', 'https://cescarib.com/compass-care'],
+      ['/college-consulting/', 'https://cescarib.com' + location.pathname],
+      ['/college-consulting', 'https://cescarib.com/college-consulting'],
+      ['/pre-college', 'https://cescarib.com/college-consulting'],
+      ['/programs', 'https://cescarib.com/college-consulting/programs'],
+      ['/outcomes', 'https://cescarib.com/college-consulting/outcomes'],
+      ['/iseey-foundation', 'https://cescarib.com/college-consulting/foundation'],
+      ['/compass', 'https://cescarib.com/login'],
+      ['/client-portal', 'https://cescarib.com/login'],
+      ['/get-started', 'https://cescarib.com/login'],
+      ['/join', 'https://cescarib.com/login'],
+      ['/dashboard', 'https://cescarib.com/login'],
+      ['/parent-dashboard', 'https://cescarib.com/login'],
+      ['/school', 'https://cescarib.com/login'],
+      ['/admin', 'https://cescarib.com/login'],
+      ['/careers', 'https://cescarib.com/'],
+      ['/therapeutic-conflictology', '/counselling/'],
+      ['/book', '/contact/']
+    ];
+    for (var i = 0; i < map.length; i++) {
+      if (p === map[i][0] || p.indexOf(map[i][0] + '/') === 0 || (map[i][0].slice(-1) === '/' && p.indexOf(map[i][0]) === 0)) {
+        location.replace(map[i][1]);
+        return;
+      }
+    }
+  })();
+</script>
+<section class="section center">
+  <div class="wrap narrow">
+    <p class="eyebrow">404</p>
+    <h1>This page has moved.</h1>
+    <p class="lead">The site has been reorganised. Looking for Compass college readiness? It now lives at <a href="https://cescarib.com">cescarib.com</a>.</p>
+    <div class="btn-row" style="justify-content:center">
+      <a class="btn" href="/">Go to the home page</a>
+      <a class="btn btn-outline" href="/contact/">Contact</a>
+    </div>
   </div>
 </section>
 </main>
