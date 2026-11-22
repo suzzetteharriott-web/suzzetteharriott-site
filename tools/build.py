@@ -145,8 +145,8 @@ CTA = '''<section class="section bg-navy center">
 # ---------------------------------------------------------------- Home
 page('/', '', 'Therapeutic Conflictology with Dr. Suzzette A. Harriott, PhD. Conflict-informed support for individuals, couples and families, in person in Kingston, Jamaica, and by secure video worldwide.', '/', f'''
 <section class="hero">
-  <video class="hero-media" autoplay muted loop playsinline poster="/img/home-poster.jpg" aria-hidden="true">
-    <source src="/media/home.mp4" type="video/mp4">
+  <video class="hero-media" autoplay muted loop playsinline poster="/img/hero-poster.jpg" aria-hidden="true">
+    <source src="/media/ocean.mp4" type="video/mp4">
   </video>
   <div class="wrap">
     <p class="eyebrow">Dr. Suzzette A. Harriott, PhD</p>
@@ -391,9 +391,7 @@ page('/counselling/', 'Therapeutic Conflictology', 'Therapeutic Conflictology wi
 # ---------------------------------------------------------------- RESET
 page('/reset/', 'RESET', 'RESET: a cohort-based experiential immersion in emotional intelligence, relationships and intentional living, facilitated by Dr. Suzzette A. Harriott.', '/reset/', f'''
 <section class="hero">
-  <video class="hero-media" autoplay muted loop playsinline poster="/img/hero-poster.jpg" aria-hidden="true">
-    <source src="/media/ocean.mp4" type="video/mp4">
-  </video>
+  <img class="hero-media" src="/img/reset-circle.jpg" alt="" aria-hidden="true" style="object-position:center 35%">
   <div class="wrap">
     <p class="eyebrow">Experiential growth training</p>
     <h1>RESET</h1>
