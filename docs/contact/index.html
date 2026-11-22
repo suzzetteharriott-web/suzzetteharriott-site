@@ -68,6 +68,7 @@
           <label for="topic">What is this about?</label>
           <select id="topic" name="topic">
             <option value="Therapeutic Conflictology">Therapeutic Conflictology (one-to-one)</option>
+            <option value="Mindful Eating &amp; Body Image">Mindful Eating &amp; Body Image</option>
             <option value="Couples or family sessions">Couples or family sessions</option>
             <option value="RESET">RESET immersion</option>
             <option value="Professional referral">Professional referral</option>
@@ -90,7 +91,7 @@
   (function () {
     var f = document.getElementById('contact-form');
     var params = new URLSearchParams(location.search);
-    var pick = { reset: 'RESET', 'therapeutic-conflictology': 'Therapeutic Conflictology' }[params.get('topic')];
+    var pick = { reset: 'RESET', 'therapeutic-conflictology': 'Therapeutic Conflictology', 'mindful-eating': 'Mindful Eating & Body Image' }[params.get('topic')];
     if (pick) f.topic.value = pick;
     f.addEventListener('submit', function (e) {
       e.preventDefault();

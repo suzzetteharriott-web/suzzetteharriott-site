@@ -203,6 +203,7 @@ page('/', '', 'Therapeutic Conflictology with Dr. Suzzette A. Harriott, PhD. Con
             'Anxiety, low mood or repeating patterns, and you want tools that fit real life',
             'Parenting stress, family conflict, or feeling overwhelmed while holding everyone else together',
             'Tension at work or in leadership that is following you home',
+            'A strained relationship with food, eating or how you see your body',
             'You feel capable on paper but misaligned inside, and want clarity without being rushed',
         ])}
       </div>
@@ -327,10 +328,29 @@ page('/counselling/', 'Therapeutic Conflictology', 'Therapeutic Conflictology wi
       <p>Illustrative, not exhaustive. If your situation is not listed, you are still welcome.</p>
     </div>
     <div class="grid grid-3">
-      <div class="step"><h3>Emotional &amp; family stress</h3>{ticks(['Emotional overwhelm', 'Family tension', 'Parent-child conflict', 'Boundaries and difficult conversations', 'Grief, transition and decision-making'])}</div>
+      <div class="step"><h3>Emotional &amp; family stress</h3>{ticks(['Emotional overwhelm', 'Family tension', 'Parent-child conflict', 'Boundaries and difficult conversations', 'Grief, transition and decision-making', 'Food, eating and body image'])}</div>
       <div class="step"><h3>Work &amp; life direction</h3>{ticks(['Career uncertainty', 'Workplace conflict', 'Life transitions and relocation', 'Burnout', 'Feeling stuck without a neat label'])}</div>
       <div class="step"><h3>Parents &amp; professionals</h3>{ticks(['Parenting through high-conflict or transitional seasons', 'Supporting a child while managing your own emotional load', 'Co-parenting and family communication', 'Leadership, community or workplace tension', 'Building steadiness before the next decision'])}</div>
     </div>
+  </div>
+</section>
+
+<section class="section" id="mindful-eating">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="eyebrow">A focus within this work</p>
+        <h2>Mindful Eating &amp; Body Image</h2>
+        <p>For many people, food and body image carry far more than nutrition. They hold family history, culture, stress, comfort and the expectations of others. When that relationship becomes strained, it can quietly shape how you feel, how you show up and how you see yourself.</p>
+        <p>This work offers a calm, judgement-free space to understand what sits beneath your patterns around food and your body, and to build a kinder, steadier way of living with both. Sessions are one-to-one and follow the same practical, goal-oriented approach as all Therapeutic Conflictology work.</p>
+      </div>
+      <div>
+        <h3>This may help if you are</h3>
+        {ticks(['Eating in response to stress, emotion or exhaustion rather than hunger', 'Feeling caught in cycles of restriction, guilt or all-or-nothing rules', 'Carrying criticism of your body that colours how you see yourself', 'Navigating family or cultural messages about food, weight and appearance', 'Wanting a calmer, more trusting relationship with food and your body'])}
+        <p class="note" style="margin-top:1.5rem">Where physical health needs attention, this work sits alongside care from your doctor and, where helpful, a registered dietitian. If you are unwell or need urgent medical care, please contact your doctor or local emergency services first.</p>
+      </div>
+    </div>
+    <div class="btn-row"><a class="btn" href="/contact/?topic=mindful-eating">Ask about Mindful Eating &amp; Body Image</a></div>
   </div>
 </section>
 
@@ -564,6 +584,7 @@ page('/contact/', 'Contact', 'Contact Dr. Suzzette A. Harriott about Therapeutic
           <label for="topic">What is this about?</label>
           <select id="topic" name="topic">
             <option value="Therapeutic Conflictology">Therapeutic Conflictology (one-to-one)</option>
+            <option value="Mindful Eating &amp; Body Image">Mindful Eating &amp; Body Image</option>
             <option value="Couples or family sessions">Couples or family sessions</option>
             <option value="RESET">RESET immersion</option>
             <option value="Professional referral">Professional referral</option>
@@ -586,7 +607,7 @@ page('/contact/', 'Contact', 'Contact Dr. Suzzette A. Harriott about Therapeutic
   (function () {{
     var f = document.getElementById('contact-form');
     var params = new URLSearchParams(location.search);
-    var pick = {{ reset: 'RESET', 'therapeutic-conflictology': 'Therapeutic Conflictology' }}[params.get('topic')];
+    var pick = {{ reset: 'RESET', 'therapeutic-conflictology': 'Therapeutic Conflictology', 'mindful-eating': 'Mindful Eating & Body Image' }}[params.get('topic')];
     if (pick) f.topic.value = pick;
     f.addEventListener('submit', function (e) {{
       e.preventDefault();
