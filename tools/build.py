@@ -357,6 +357,17 @@ page('/counselling/', 'Therapeutic Conflictology', 'Therapeutic Conflictology wi
   </div>
 </section>
 
+<section class="section bg-navy">
+  <div class="wrap">
+    <div class="center narrow" style="margin:0 auto 3rem"><p class="eyebrow" style="color:var(--sand)">Client experiences</p><h2>Real shifts, real clarity.</h2></div>
+    <div class="grid grid-3">
+      <figure class="testimonial"><blockquote>&ldquo;Dr. Harriott helped me see the patterns I could not see myself. I finally understand why the same cycles kept repeating, and what to do differently.&rdquo;</blockquote><figcaption>Family dynamics</figcaption></figure>
+      <figure class="testimonial"><blockquote>&ldquo;The most thoughtful guidance I have received. She does not tell you what to do; she helps you find your own answer.&rdquo;</blockquote><figcaption>Career and identity</figcaption></figure>
+      <figure class="testimonial"><blockquote>&ldquo;Practical and immediate. I left with tools, a new perspective, and a path I could actually follow.&rdquo;</blockquote><figcaption>Workplace conflict</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section class="section bg-sand">
   <div class="wrap">
     <div class="center narrow" style="margin:0 auto 3rem"><p class="eyebrow">How it works</p><h2>Three simple stages.</h2></div>
@@ -597,7 +608,7 @@ page('/contact/', 'Contact', 'Contact Dr. Suzzette A. Harriott about Therapeutic
 
 # ---------------------------------------------------------------- Legal
 LEGAL_CONTACT = f'''<h2>Contact</h2>
-<p>Suzzette Harriott &amp; Associates<br>Kingston, Jamaica<br><a href="mailto:{EMAIL}">{EMAIL}</a></p>'''
+<p>Dr. Suzzette A. Harriott, PhD<br>Suzzette Harriott &amp; Associates<br>Kingston, Jamaica<br><a href="mailto:{EMAIL}">{EMAIL}</a></p>'''
 
 def legal(path, title, desc, body):
     page(path, title, desc, '', f'''
@@ -610,35 +621,35 @@ def legal(path, title, desc, body):
   </div>
 </section>''')
 
-legal('/privacy-policy/', 'Privacy Policy', 'How suzzetteharriott.com handles personal information.', '''
-<p>Suzzette Harriott &amp; Associates (&ldquo;we&rdquo;, &ldquo;us&rdquo;) respects your privacy. This policy explains what information this website handles and how. Personal data is handled in line with Jamaica&rsquo;s Data Protection Act, 2020.</p>
+legal('/privacy-policy/', 'Privacy Policy', 'How suzzetteharriott.com handles personal information.', f'''
+<p>This website, suzzetteharriott.com, is operated by Dr. Suzzette A. Harriott, PhD, practising as Suzzette Harriott &amp; Associates (&ldquo;Dr. Harriott&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;). Dr. Harriott respects your privacy. This policy explains what information this website handles and how. Personal data is handled in line with Jamaica&rsquo;s Data Protection Act, 2020.</p>
 <h2>What this website collects</h2>
 <p>This website does not have accounts, logins or a database, and it does not store the information you type into the contact form. When you use the contact form, your device opens a new email addressed to us. Nothing is sent until you press send in your own email program.</p>
-<p>If you email us, we receive the information you choose to include, such as your name, email address, phone number and message.</p>
+<p>If you email Dr. Harriott, she receives the information you choose to include, such as your name, email address, phone number and message.</p>
 <h2>How we use your information</h2>
 <ul>
 <li>To reply to your enquiry</li>
-<li>To arrange and provide services you request</li>
+<li>To arrange and provide the services you request, such as Therapeutic Conflictology sessions or RESET enrolment</li>
 </ul>
 <p>We do not sell, rent or share your personal information for marketing.</p>
 <h2>Confidentiality</h2>
-<p>Information shared in the course of services is treated as confidential, within the limits explained to you at the start of our work together. Please avoid sending sensitive personal or health details in your first email.</p>
+<p>Information shared with Dr. Harriott in the course of services is treated as confidential, within the limits explained to you at the start of our work together. Please avoid sending sensitive personal or health details in your first email.</p>
 <h2>Technical services</h2>
 <p>This website is served by a hosting provider, which processes basic technical information (such as IP address and browser type) to deliver pages securely. Fonts are loaded from Google Fonts, which receives your IP address when a page loads. We do not use analytics or advertising tools.</p>
 <h2>Your rights</h2>
-<p>You may ask to see, correct or delete personal information we hold about you by emailing us.</p>
+<p>You may ask to see, correct or delete personal information Dr. Harriott holds about you by emailing <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 <h2>Changes</h2>
 <p>We may update this policy from time to time. The current version will always appear on this page.</p>
 ''')
 
 legal('/terms-of-service/', 'Terms of Service', 'Terms for using suzzetteharriott.com.', '''
-<p>By using this website you agree to these terms.</p>
+<p>This website, suzzetteharriott.com, is operated by Dr. Suzzette A. Harriott, PhD, practising as Suzzette Harriott &amp; Associates. By using this website you agree to these terms.</p>
 <h2>Information only</h2>
-<p>Content on this website is general information about the services of Suzzette Harriott &amp; Associates. It is not professional advice for your situation and does not create a client relationship. Services begin only after an initial conversation and mutual agreement.</p>
+<p>Content on this website is general information about the services of Dr. Suzzette A. Harriott, PhD. It is not professional advice for your situation and does not create a client relationship. Services begin only after an initial conversation and mutual agreement.</p>
 <h2>Not an emergency service</h2>
 <p>This website and its email address are not monitored for emergencies. If you are in danger or need urgent care, contact your local emergency services or go to the nearest hospital.</p>
 <h2>Intellectual property</h2>
-<p>All content on this website, including text, design, images, programme names and frameworks such as RESET, belongs to Suzzette Harriott &amp; Associates unless stated otherwise, and may not be copied or redistributed without written permission.</p>
+<p>All content on this website, including text, design, images, programme names and frameworks such as RESET, belongs to Dr. Suzzette A. Harriott, PhD (Suzzette Harriott &amp; Associates) unless stated otherwise, and may not be copied or redistributed without written permission.</p>
 <h2>Links to other websites</h2>
 <p>We are not responsible for the content or policies of websites we link to.</p>
 <h2>Limitation of liability</h2>
@@ -650,7 +661,7 @@ legal('/terms-of-service/', 'Terms of Service', 'Terms for using suzzetteharriot
 ''')
 
 legal('/cookie-policy/', 'Cookie Policy', 'Cookie use on suzzetteharriott.com.', '''
-<p>Cookies are small files a website can store on your device.</p>
+<p>This policy covers suzzetteharriott.com, the website of Dr. Suzzette A. Harriott, PhD. Cookies are small files a website can store on your device.</p>
 <h2>Our use of cookies</h2>
 <p>This website does not set any cookies. We do not use analytics, advertising or tracking tools.</p>
 <h2>Third parties</h2>

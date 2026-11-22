@@ -716,3 +716,28 @@ a:focus-visible {
         scroll-behavior: auto;
     }
 }
+
+/* ---------- Testimonials ---------- */
+.testimonial {
+    margin: 0;
+    padding: 1.75rem;
+    border-radius: var(--radius);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.testimonial blockquote {
+    margin: 0 0 1rem;
+    font-family: var(--heading);
+    font-size: 1.35rem;
+    line-height: 1.45;
+    font-style: italic;
+    color: var(--white);
+}
+
+.testimonial figcaption {
+    font-size: 0.78rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--sand);
+}
