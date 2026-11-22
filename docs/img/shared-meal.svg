@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="t">
+  <title id="t">Friends laughing together over a shared dinner</title>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6efe4"/>
+      <stop offset="1" stop-color="#ead9c2"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.25" r="0.6">
+      <stop offset="0" stop-color="#fff6dd" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#fff6dd" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8a5a3b"/>
+      <stop offset="1" stop-color="#6b4329"/>
+    </linearGradient>
+    <linearGradient id="cloth" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#efe7da"/>
+    </linearGradient>
+    <!-- reusable happy face: closed smiling eyes + open smile -->
+    <g id="face">
+      <path d="M-17 -4 q7 -7 14 0" fill="none" stroke="#2a1d16" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M5 -4 q7 -7 14 0" fill="none" stroke="#2a1d16" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M-12 12 q13 15 26 0 z" fill="#7a2e2a"/>
+      <path d="M-9 13 q10 5 20 0" fill="#ffffff"/>
+    </g>
+  </defs>
+
+  <!-- room -->
+  <rect width="1200" height="800" fill="url(#wall)"/>
+  <rect width="1200" height="800" fill="url(#glow)"/>
+  <!-- window with evening sky -->
+  <rect x="820" y="70" width="280" height="220" rx="10" fill="#f2b880"/>
+  <rect x="820" y="70" width="280" height="110" rx="10" fill="#e98d6b" opacity="0.6"/>
+  <circle cx="1030" cy="190" r="34" fill="#ffd89a"/>
+  <path d="M820 250 q70 -40 140 -10 t140 -20 v30 h-280z" fill="#4f7b6a"/>
+  <rect x="820" y="70" width="280" height="220" rx="10" fill="none" stroke="#fff" stroke-width="10"/>
+  <line x1="960" y1="70" x2="960" y2="290" stroke="#fff" stroke-width="8"/>
+  <!-- plant -->
+  <path d="M120 330 q-30 -90 10 -160 q20 70 -10 160" fill="#5f8f6b"/>
+  <path d="M135 330 q10 -110 70 -150 q-10 90 -70 150" fill="#4f7b6a"/>
+  <path d="M110 330 q-70 -60 -60 -130 q50 50 60 130" fill="#6fa07a"/>
+  <rect x="95" y="320" width="60" height="70" rx="8" fill="#c97b55"/>
+  <!-- string lights -->
+  <path d="M0 40 q300 60 600 10 t600 20" fill="none" stroke="#b89b78" stroke-width="2"/>
+  <g fill="#ffd27a">
+    <circle cx="80" cy="54" r="7"/><circle cx="200" cy="66" r="7"/><circle cx="330" cy="68" r="7"/>
+    <circle cx="460" cy="58" r="7"/><circle cx="590" cy="50" r="7"/><circle cx="720" cy="42" r="7"/>
+    <circle cx="860" cy="40" r="7"/><circle cx="1000" cy="48" r="7"/><circle cx="1130" cy="58" r="7"/>
+  </g>
+
+  <!-- ===== back row of diners (behind table) ===== -->
+  <!-- 1: deep brown skin, natural afro puff, mustard top -->
+  <g transform="translate(250 395)">
+    <path d="M-70 175 q0 -95 70 -100 q70 5 70 100z" fill="#e0a43a"/>
+    <rect x="-14" y="40" width="28" height="30" fill="#5a3825"/>
+    <circle cx="0" cy="-60" r="52" fill="#2a1a12"/>
+    <circle cx="0" cy="-5" r="50" fill="#5a3825"/>
+    <path d="M-50 -10 q0 -55 50 -58 q50 3 50 58 q-10 -30 -50 -32 q-40 2 -50 32z" fill="#2a1a12"/>
+    <use href="#face" y="2"/>
+    <circle cx="-30" cy="14" r="8" fill="#7a3f2a" opacity="0.35"/><circle cx="30" cy="14" r="8" fill="#7a3f2a" opacity="0.35"/>
+    <circle cx="-49" cy="10" r="5" fill="#e8c062"/><circle cx="49" cy="10" r="5" fill="#e8c062"/>
+  </g>
+  <!-- 2: light skin, short wavy brown hair, beard, blue shirt, raising glass -->
+  <g transform="translate(410 385)">
+    <path d="M-72 185 q0 -100 72 -105 q72 5 72 105z" fill="#4c78a8"/>
+    <rect x="-14" y="40" width="28" height="30" fill="#f1d3bd"/>
+    <circle cx="0" cy="-5" r="50" fill="#f1d3bd"/>
+    <path d="M-50 -12 q-4 -52 46 -58 q52 -2 56 50 q-14 -26 -30 -22 q-20 -16 -40 -6 q-20 4 -32 36z" fill="#7a4a2a"/>
+    <path d="M-40 18 q40 52 80 0 q-6 34 -40 36 q-34 -2 -40 -36z" fill="#7a4a2a"/>
+    <use href="#face" y="0"/>
+    <circle cx="-30" cy="12" r="8" fill="#e58a7a" opacity="0.4"/><circle cx="30" cy="12" r="8" fill="#e58a7a" opacity="0.4"/>
+    <path d="M60 110 q30 -40 40 -110" fill="none" stroke="#4c78a8" stroke-width="26" stroke-linecap="round"/>
+    <circle cx="100" cy="0" r="14" fill="#f1d3bd"/>
+    <path d="M92 -56 h22 l-4 40 h-14z" fill="#f7e7d0" stroke="#c9b69b" stroke-width="2"/>
+    <path d="M94 -40 h18 l-2 24 h-14z" fill="#a8324a" opacity="0.85"/>
+  </g>
+  <!-- 3: medium tan (mixed), curly shoulder-length hair, coral top -->
+  <g transform="translate(600 380)">
+    <path d="M-72 190 q0 -100 72 -105 q72 5 72 105z" fill="#e86f5a"/>
+    <path d="M-62 30 q-30 -60 -8 -110 q30 -40 70 -40 q40 0 70 40 q22 50 -8 110z" fill="#3b2418"/>
+    <rect x="-14" y="40" width="28" height="30" fill="#c68d63"/>
+    <circle cx="0" cy="-5" r="50" fill="#c68d63"/>
+    <path d="M-50 -8 q4 -56 50 -58 q46 2 50 58 q-20 -36 -50 -36 q-30 0 -50 36z" fill="#3b2418"/>
+    <g fill="#3b2418"><circle cx="-56" cy="10" r="12"/><circle cx="56" cy="10" r="12"/><circle cx="-58" cy="34" r="11"/><circle cx="58" cy="34" r="11"/></g>
+    <use href="#face" y="2"/>
+    <circle cx="-30" cy="14" r="8" fill="#a5523c" opacity="0.35"/><circle cx="30" cy="14" r="8" fill="#a5523c" opacity="0.35"/>
+  </g>
+  <!-- 4: light-medium (Chinese mixed), straight black bob with fringe, green top -->
+  <g transform="translate(790 385)">
+    <path d="M-72 185 q0 -100 72 -105 q72 5 72 105z" fill="#5f9a7a"/>
+    <rect x="-14" y="40" width="28" height="30" fill="#e3b48f"/>
+    <path d="M-58 30 v-50 q0 -66 58 -66 q58 0 58 66 v50z" fill="#14110f"/>
+    <circle cx="0" cy="-5" r="50" fill="#e3b48f"/>
+    <path d="M-52 -2 q0 -62 52 -62 q52 0 52 62 q-6 -18 -14 -22 h-76 q-8 4 -14 22z" fill="#14110f"/>
+    <use href="#face" y="4"/>
+    <circle cx="-30" cy="16" r="8" fill="#e07a6a" opacity="0.4"/><circle cx="30" cy="16" r="8" fill="#e07a6a" opacity="0.4"/>
+  </g>
+  <!-- 5: warm brown (Indian), long dark hair in side braid, magenta top with gold trim -->
+  <g transform="translate(960 395)">
+    <path d="M-70 175 q0 -95 70 -100 q70 5 70 100z" fill="#b0306a"/>
+    <path d="M-40 80 q40 22 80 0" fill="none" stroke="#e8c062" stroke-width="6"/>
+    <rect x="-14" y="40" width="28" height="30" fill="#a86b45"/>
+    <circle cx="0" cy="-5" r="50" fill="#a86b45"/>
+    <path d="M-52 4 q-2 -64 52 -66 q54 2 52 64 q-14 -40 -52 -42 q-38 2 -52 44z" fill="#1c1210"/>
+    <path d="M44 0 q22 40 8 120" fill="none" stroke="#1c1210" stroke-width="22" stroke-linecap="round"/>
+    <use href="#face" y="4"/>
+    <circle cx="-30" cy="16" r="8" fill="#7a3f2a" opacity="0.35"/><circle cx="30" cy="16" r="8" fill="#7a3f2a" opacity="0.35"/>
+    <circle cx="-49" cy="12" r="5" fill="#e8c062"/>
+  </g>
+
+  <!-- ===== table ===== -->
+  <path d="M120 560 h960 l40 70 h-1040z" fill="url(#cloth)"/>
+  <rect x="80" y="628" width="1040" height="26" fill="#d8cbb6"/>
+  <path d="M80 654 h1040 v146 h-1040z" fill="url(#table)"/>
+  <!-- dishes -->
+  <ellipse cx="600" cy="580" rx="120" ry="28" fill="#ffffff" stroke="#d9cfc0" stroke-width="3"/>
+  <ellipse cx="600" cy="572" rx="92" ry="20" fill="#e9a23b"/>
+  <g fill="#c0392b"><circle cx="570" cy="566" r="9"/><circle cx="612" cy="562" r="9"/><circle cx="640" cy="572" r="8"/></g>
+  <g fill="#3f8a4a"><ellipse cx="590" cy="574" rx="12" ry="5"/><ellipse cx="626" cy="578" rx="10" ry="4"/><ellipse cx="555" cy="578" rx="10" ry="4"/></g>
+  <ellipse cx="380" cy="600" rx="70" ry="18" fill="#ffffff" stroke="#d9cfc0" stroke-width="3"/>
+  <ellipse cx="380" cy="594" rx="50" ry="11" fill="#f4e3b5"/>
+  <g fill="#ffffff" stroke="#e8dcc5" stroke-width="2"><circle cx="365" cy="590" r="6"/><circle cx="385" cy="588" r="6"/><circle cx="398" cy="594" r="6"/></g>
+  <ellipse cx="820" cy="600" rx="70" ry="18" fill="#ffffff" stroke="#d9cfc0" stroke-width="3"/>
+  <ellipse cx="820" cy="594" rx="50" ry="11" fill="#7fb069"/>
+  <g fill="#e86f5a"><circle cx="806" cy="590" r="6"/><circle cx="832" cy="592" r="6"/></g>
+  <!-- glasses and plates -->
+  <g fill="#ffffff" stroke="#d9cfc0" stroke-width="2">
+    <ellipse cx="230" cy="612" rx="44" ry="10"/><ellipse cx="500" cy="618" rx="44" ry="10"/>
+    <ellipse cx="700" cy="618" rx="44" ry="10"/><ellipse cx="960" cy="612" rx="44" ry="10"/>
+  </g>
+  <g><path d="M290 560 h18 l-3 40 h-12z" fill="#f7e7d0" stroke="#c9b69b" stroke-width="2"/><path d="M292 576 h14 l-2 22 h-10z" fill="#e9a23b" opacity="0.8"/></g>
+  <g><path d="M890 560 h18 l-3 40 h-12z" fill="#f7e7d0" stroke="#c9b69b" stroke-width="2"/><path d="M892 576 h14 l-2 22 h-10z" fill="#a8324a" opacity="0.85"/></g>
+  <!-- candles -->
+  <rect x="470" y="530" width="10" height="44" rx="3" fill="#fff4dc"/><path d="M475 512 q8 10 0 18 q-8 -8 0 -18z" fill="#ffb347"/>
+  <rect x="720" y="530" width="10" height="44" rx="3" fill="#fff4dc"/><path d="M725 512 q8 10 0 18 q-8 -8 0 -18z" fill="#ffb347"/>
+
+  <!-- ===== front corners (seen from behind/side, at table ends) ===== -->
+  <!-- 6: deep brown, short fade, navy shirt, laughing, left end -->
+  <g transform="translate(95 520)">
+    <path d="M-60 280 q-10 -150 60 -160 q70 10 60 160z" fill="#2c4a5e"/>
+    <rect x="-13" y="80" width="26" height="30" fill="#4a2c1c"/>
+    <circle cx="0" cy="40" r="48" fill="#4a2c1c"/>
+    <path d="M-48 30 q4 -50 48 -52 q44 2 48 52 q-10 -26 -48 -28 q-38 2 -48 28z" fill="#160d08"/>
+    <g transform="translate(10 44)"><use href="#face"/></g>
+    <circle cx="-14" cy="58" r="8" fill="#7a3f2a" opacity="0.35"/><circle cx="42" cy="58" r="8" fill="#7a3f2a" opacity="0.35"/>
+    <path d="M50 180 q60 -30 90 -80" fill="none" stroke="#2c4a5e" stroke-width="24" stroke-linecap="round"/>
+    <circle cx="140" cy="98" r="12" fill="#4a2c1c"/>
+  </g>
+  <!-- 7: golden-brown (mixed), curly high bun, lilac top, right end -->
+  <g transform="translate(1105 520)">
+    <path d="M-60 280 q-10 -150 60 -160 q70 10 60 160z" fill="#9b7fc0"/>
+    <rect x="-13" y="80" width="26" height="30" fill="#b97c55"/>
+    <circle cx="0" cy="-22" r="26" fill="#3a2316"/>
+    <circle cx="0" cy="40" r="48" fill="#b97c55"/>
+    <path d="M-48 34 q2 -54 48 -56 q46 2 48 56 q-16 -32 -48 -32 q-32 0 -48 32z" fill="#3a2316"/>
+    <g transform="translate(-10 44)"><use href="#face"/></g>
+    <circle cx="-38" cy="58" r="8" fill="#a5523c" opacity="0.35"/><circle cx="18" cy="58" r="8" fill="#a5523c" opacity="0.35"/>
+    <path d="M-50 180 q-60 -30 -90 -70" fill="none" stroke="#9b7fc0" stroke-width="24" stroke-linecap="round"/>
+    <circle cx="-140" cy="108" r="12" fill="#b97c55"/>
+  </g>
+</svg>
