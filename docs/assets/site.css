@@ -831,4 +831,8 @@ a:focus-visible {
     .menu-toggle {
         padding: 0.45rem 0.6rem;
     }
+
+    .wrap {
+        padding: 0 1rem;
+    }
 }
