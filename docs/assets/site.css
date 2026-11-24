@@ -141,7 +141,7 @@ p {
 }
 
 .brand-sub {
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--slate);
@@ -801,7 +801,34 @@ a:focus-visible {
     }
 
     .brand-sub {
-        font-size: 0.56rem;
-        letter-spacing: 0.08em;
+        font-size: 0.75rem;
+        letter-spacing: 0.06em;
+    }
+
+    .brand-phd {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .brand {
+        gap: 0.5rem;
+    }
+
+    .brand-mark {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .brand-sub {
+        letter-spacing: 0;
+    }
+
+    .menu-toggle {
+        padding: 0.45rem 0.6rem;
     }
 }
